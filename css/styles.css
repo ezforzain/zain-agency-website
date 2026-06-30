@@ -1714,6 +1714,21 @@ a.contact__info-value:hover { color: var(--lilac); }
 }
 .form-success[hidden] { display: none; }
 
+.form-error-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  margin-top: var(--s5);
+  padding: var(--s4) var(--s5);
+  border-radius: var(--r-md);
+  background: rgba(248,113,113,0.09);
+  border: 1px solid rgba(248,113,113,0.30);
+  color: var(--red);
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+.form-error-banner[hidden] { display: none; }
+
 /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    FOOTER
    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */

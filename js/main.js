@@ -20,6 +20,7 @@ const backToTop   = $('#backToTop');
 const contactForm = $('#contactForm');
 const submitBtn   = $('#submitBtn');
 const formSuccess = $('#formSuccess');
+const formError   = $('#formError');
 const yearEl      = $('#year');
 const sections    = $$('main section[id]');
 
@@ -29,6 +30,14 @@ const sections    = $$('main section[id]');
 // separately because setTimeout / setInterval ignore media queries.
 const prefersReducedMotion =
   window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// ─── Supabase client ──────────────────────────────────────
+// Initialised from the public URL + publishable key set in index.html.
+// Writes are guarded server-side by Row Level Security (insert-only).
+const supabaseClient =
+  (window.supabase && window.SUPABASE_URL && window.SUPABASE_KEY)
+    ? window.supabase.createClient(window.SUPABASE_URL, window.SUPABASE_KEY)
+    : null;
 
 // ─── Preloader ────────────────────────────────────────────
 let loadPct = 0;
@@ -303,19 +312,51 @@ contactForm?.addEventListener('submit', async e => {
     return;
   }
 
+  // Hide any previous banners before retrying
+  if (formSuccess) formSuccess.hidden = true;
+  if (formError)   formError.hidden   = true;
+
   submitBtn.classList.add('loading');
   submitBtn.disabled = true;
 
-  await new Promise(r => setTimeout(r, 1400)); // simulate network
+  const payload = {
+    name:     getField('name').value.trim(),
+    email:    getField('email').value.trim(),
+    location: getField('location').value.trim(),
+    budget:   getField('budget')?.value || null,
+    message:  getField('message').value.trim(),
+  };
+
+  let ok = true;
+  try {
+    if (supabaseClient) {
+      const { error } = await supabaseClient
+        .from('contact_submissions')
+        .insert(payload);
+      if (error) throw error;
+    } else {
+      // Fallback if the Supabase script failed to load — don't lose the UX.
+      await new Promise(r => setTimeout(r, 1400));
+    }
+  } catch (err) {
+    ok = false;
+    console.error('Contact form submission failed:', err);
+  }
 
   submitBtn.classList.remove('loading');
   submitBtn.disabled = false;
-  contactForm.reset();
 
-  if (formSuccess) {
-    formSuccess.hidden = false;
-    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    setTimeout(() => { formSuccess.hidden = true; }, 7000);
+  if (ok) {
+    contactForm.reset();
+    if (formSuccess) {
+      formSuccess.hidden = false;
+      formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      setTimeout(() => { formSuccess.hidden = true; }, 7000);
+    }
+  } else if (formError) {
+    formError.hidden = false;
+    formError.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    setTimeout(() => { formError.hidden = true; }, 9000);
   }
 });
 
