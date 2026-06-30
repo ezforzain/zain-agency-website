@@ -1,0 +1,906 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zain Agency — Award-winning digital agency crafting web experiences, brand identities, and digital strategies that drive real results." />
+  <meta name="theme-color" content="#0c0801" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Zain Agency" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Zain Agency — Digital Experiences That Matter" />
+  <meta property="og:description" content="We craft stunning digital products for ambitious brands." />
+  <meta property="og:site_name" content="Zain Agency" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Zain Agency — Digital Experiences That Matter" />
+  <meta name="twitter:description" content="We craft stunning digital products for ambitious brands." />
+  <title>Zain Agency — Digital Experiences That Matter</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ─── Preloader ─────────────────────────────────────── -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__logo">Zain<span>Agency</span></div>
+    <div class="preloader__bar"><div class="preloader__fill" id="preloaderFill"></div></div>
+  </div>
+
+  <!-- ─── Scroll progress bar ───────────────────────────── -->
+  <div class="progress-bar" id="progressBar" role="progressbar" aria-label="Page scroll progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <!-- ─── Navigation ───────────────────────────────────── -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo">Zain<span>Agency</span></a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary navigation">
+        <a href="#home"      class="nav__link">Home</a>
+        <a href="#services"  class="nav__link">Services</a>
+        <a href="#process"   class="nav__link">Process</a>
+        <a href="#about"     class="nav__link">About</a>
+        <a href="#contact"   class="nav__link">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary btn--sm nav__cta">Get Started</a>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ─── Mobile menu ──────────────────────────────────── -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="mobile-menu__close" id="mobileClose" aria-label="Close menu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <nav class="mobile-menu__links" aria-label="Mobile navigation">
+      <a href="#home"      class="mobile-menu__link">Home</a>
+      <a href="#services"  class="mobile-menu__link">Services</a>
+      <a href="#process"   class="mobile-menu__link">Process</a>
+      <a href="#about"     class="mobile-menu__link">About</a>
+      <a href="#contact"   class="mobile-menu__link">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn--primary btn--lg mobile-menu__cta">Get Started</a>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════
+         HERO
+    ════════════════════════════════════════════════════ -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+
+      <!-- Background effects -->
+      <div class="hero__bg" aria-hidden="true">
+        <div class="orb orb--1"></div>
+        <div class="orb orb--2"></div>
+        <div class="orb orb--3"></div>
+        <div class="noise-overlay"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="container hero__inner">
+
+        <!-- Left: copy -->
+        <div class="hero__copy">
+          <div class="hero__badge fade-up" data-delay="0">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            Award-winning Digital Agency
+          </div>
+
+          <h1 class="hero__title fade-up" data-delay="80" id="hero-heading">
+            We Craft Digital<br />
+            <span class="text-gradient">Experiences</span><br />
+            That Convert
+          </h1>
+
+          <p class="hero__subtitle fade-up" data-delay="180">
+            Zain Agency builds stunning websites, compelling brand identities,
+            and data-driven strategies for ambitious businesses ready to lead their industry.
+          </p>
+
+          <div class="hero__actions fade-up" data-delay="280">
+            <a href="#services" class="btn btn--primary btn--lg">
+              Explore Services
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#process" class="btn btn--ghost btn--lg">How We Work</a>
+          </div>
+
+          <div class="hero__social-proof fade-up" data-delay="380">
+            <div class="hero__avatars" aria-label="Happy clients">
+              <img class="hero__avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Happy client" width="36" height="36" />
+              <img class="hero__avatar" src="https://randomuser.me/api/portraits/men/32.jpg"   alt="Happy client" width="36" height="36" />
+              <img class="hero__avatar" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Happy client" width="36" height="36" />
+              <img class="hero__avatar" src="https://randomuser.me/api/portraits/men/75.jpg"   alt="Happy client" width="36" height="36" />
+            </div>
+            <div class="hero__proof-text">
+              <span class="hero__stars" aria-label="5 stars">★★★★★</span>
+              <span>Trusted by <strong>50+ clients</strong> worldwide</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: dashboard mockup -->
+        <div class="hero__visual fade-up" data-delay="200" aria-hidden="true">
+          <div class="hw-window">
+            <div class="hw-titlebar">
+              <div class="hw-dots">
+                <span style="background:#ff5f57"></span>
+                <span style="background:#ffbd2e"></span>
+                <span style="background:#28c840"></span>
+              </div>
+              <div class="hw-url">dashboard.zainagency.com</div>
+            </div>
+            <div class="hw-body">
+              <div class="hw-sidebar">
+                <div class="hw-sbi hw-sbi--active">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+                </div>
+                <div class="hw-sbi">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <div class="hw-sbi">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <div class="hw-sbi">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93A10 10 0 105.93 19.07 10 10 0 0019.07 4.93z"/></svg>
+                </div>
+              </div>
+              <div class="hw-main">
+                <div class="hw-header-row">
+                  <span class="hw-heading">Analytics</span>
+                  <span class="hw-period">This Month ▾</span>
+                </div>
+                <div class="hw-metrics">
+                  <div class="hw-metric">
+                    <span class="hw-m-label">Revenue</span>
+                    <span class="hw-m-value">$48.5k</span>
+                    <span class="hw-m-up">↑ 12%</span>
+                  </div>
+                  <div class="hw-metric">
+                    <span class="hw-m-label">Clients</span>
+                    <span class="hw-m-value">1,204</span>
+                    <span class="hw-m-up">↑ 8%</span>
+                  </div>
+                  <div class="hw-metric">
+                    <span class="hw-m-label">Projects</span>
+                    <span class="hw-m-value">38</span>
+                    <span class="hw-m-up">↑ 5%</span>
+                  </div>
+                </div>
+                <div class="hw-chart">
+                  <svg viewBox="0 0 200 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="cg1" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#b45309"/>
+                        <stop offset="1" stop-color="#d97706"/>
+                      </linearGradient>
+                      <linearGradient id="cg2" x1="0" y1="0" x2="0" y2="55" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#b45309" stop-opacity="0.3"/>
+                        <stop offset="1" stop-color="#b45309" stop-opacity="0"/>
+                      </linearGradient>
+                    </defs>
+                    <path d="M0 42 C20 38 35 34 55 36 S90 26 115 20 S150 10 170 14 S188 8 200 4" stroke="url(#cg1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M0 42 C20 38 35 34 55 36 S90 26 115 20 S150 10 170 14 S188 8 200 4 L200 55 L0 55Z" fill="url(#cg2)"/>
+                    <circle cx="55"  cy="36" r="2.5" fill="#b45309" stroke="#0d1526" stroke-width="1.5"/>
+                    <circle cx="115" cy="20" r="2.5" fill="#d97706" stroke="#0d1526" stroke-width="1.5"/>
+                    <circle cx="200" cy="4"  r="2.5" fill="#b45309" stroke="#0d1526" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <div class="hw-projects">
+                  <div class="hw-proj">
+                    <div class="hw-proj-dot" style="background:#b45309"></div>
+                    <span class="hw-proj-name">Brand Redesign</span>
+                    <span class="hw-proj-status s-done">Done</span>
+                  </div>
+                  <div class="hw-proj">
+                    <div class="hw-proj-dot" style="background:#d97706"></div>
+                    <span class="hw-proj-name">E-Commerce Site</span>
+                    <span class="hw-proj-status s-active">Active</span>
+                  </div>
+                  <div class="hw-proj">
+                    <div class="hw-proj-dot" style="background:#fbbf24"></div>
+                    <span class="hw-proj-name">Mobile App</span>
+                    <span class="hw-proj-status s-review">Review</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating badges -->
+          <div class="hw-float hw-float--notify">
+            <div class="hw-float-check">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <div class="hw-float-title">Project Delivered!</div>
+              <div class="hw-float-sub">On time · Within budget</div>
+            </div>
+          </div>
+
+          <div class="hw-float hw-float--stars">
+            <div class="hw-float-stars">★★★★★</div>
+            <div class="hw-float-sub">5.0 · Client Verified</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll indicator -->
+      <a href="#services" class="hero__scroll" aria-label="Scroll to services">
+        <div class="hero__scroll-line"></div>
+        <span>Scroll</span>
+      </a>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         MARQUEE STRIP
+    ════════════════════════════════════════════════════ -->
+    <div class="marquee-section" aria-hidden="true">
+      <div class="marquee-track" id="marqueeTrack">
+        <div class="marquee-inner">
+          <span class="marquee-item">Web Design</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">Branding</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">UI/UX Design</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">React</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">Next.js</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">Node.js</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">Digital Marketing</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">SEO</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">Mobile Apps</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">TypeScript</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">Figma</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">E-Commerce</span><span class="marquee-sep">✦</span>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-inner" aria-hidden="true">
+          <span class="marquee-item">Web Design</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">Branding</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">UI/UX Design</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">React</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">Next.js</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">Node.js</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">Digital Marketing</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">SEO</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">Mobile Apps</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">TypeScript</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">Figma</span><span class="marquee-sep">✦</span>
+          <span class="marquee-item">E-Commerce</span><span class="marquee-sep">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+         SERVICES
+    ════════════════════════════════════════════════════ -->
+    <section class="services section" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">Our Services</div>
+          <h2 class="section-title" id="services-heading">Everything You Need to <span class="text-gradient">Succeed Online</span></h2>
+          <p class="section-subtitle">End-to-end digital solutions designed to grow your business and outshine the competition.</p>
+        </div>
+
+        <div class="services__grid">
+
+          <article class="svc-card reveal" data-delay="0" tabindex="0" role="button" aria-expanded="false">
+            <div class="svc-card__num">01</div>
+            <div class="svc-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="svc-card__title">Web Development</h3>
+            <p class="svc-card__desc">Custom, lightning-fast websites and web apps built with modern technologies, SEO-ready from day one.</p>
+            <div class="svc-card__tags">
+              <span>React</span><span>Next.js</span><span>Node.js</span>
+            </div>
+            <div class="svc-card__toggle" aria-hidden="true">
+              <span class="svc-card__toggle-text">View Details</span>
+              <svg class="svc-card__chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+            <div class="svc-card__panel" aria-hidden="true">
+              <div class="svc-card__panel-inner">
+                <ul class="svc-card__features">
+                  <li>Custom responsive design from scratch</li>
+                  <li>Built-in SEO, performance &amp; accessibility</li>
+                  <li>CMS integration (WordPress, Sanity, Contentful)</li>
+                  <li>API &amp; third-party service integrations</li>
+                  <li>3 months of post-launch support</li>
+                </ul>
+                <a href="#contact" class="btn btn--primary btn--sm svc-card__cta">Get a Quote →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="svc-card reveal" data-delay="80" tabindex="0" role="button" aria-expanded="false">
+            <div class="svc-card__num">02</div>
+            <div class="svc-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <h3 class="svc-card__title">Brand Identity</h3>
+            <p class="svc-card__desc">Distinctive logos, visual systems, and brand guidelines that tell your story and build instant trust.</p>
+            <div class="svc-card__tags">
+              <span>Logo</span><span>Guidelines</span><span>Assets</span>
+            </div>
+            <div class="svc-card__toggle" aria-hidden="true">
+              <span class="svc-card__toggle-text">View Details</span>
+              <svg class="svc-card__chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+            <div class="svc-card__panel" aria-hidden="true">
+              <div class="svc-card__panel-inner">
+                <ul class="svc-card__features">
+                  <li>Logo design — 3 unique concepts</li>
+                  <li>Brand color palette &amp; typography system</li>
+                  <li>Brand guidelines PDF (print &amp; digital)</li>
+                  <li>Social media kit &amp; favicon package</li>
+                  <li>Unlimited revisions until you're happy</li>
+                </ul>
+                <a href="#contact" class="btn btn--primary btn--sm svc-card__cta">Get a Quote →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="svc-card reveal" data-delay="160" tabindex="0" role="button" aria-expanded="false">
+            <div class="svc-card__num">03</div>
+            <div class="svc-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="svc-card__title">UI/UX Design</h3>
+            <p class="svc-card__desc">Research-backed interfaces that delight users, reduce friction, and drive measurable business outcomes.</p>
+            <div class="svc-card__tags">
+              <span>Figma</span><span>Prototyping</span><span>Research</span>
+            </div>
+            <div class="svc-card__toggle" aria-hidden="true">
+              <span class="svc-card__toggle-text">View Details</span>
+              <svg class="svc-card__chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+            <div class="svc-card__panel" aria-hidden="true">
+              <div class="svc-card__panel-inner">
+                <ul class="svc-card__features">
+                  <li>User research &amp; competitor analysis</li>
+                  <li>Wireframes &amp; low-fidelity sketches</li>
+                  <li>High-fidelity interactive Figma prototypes</li>
+                  <li>Usability testing &amp; iteration</li>
+                  <li>Full developer handoff with design tokens</li>
+                </ul>
+                <a href="#contact" class="btn btn--primary btn--sm svc-card__cta">Get a Quote →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="svc-card reveal" data-delay="0" tabindex="0" role="button" aria-expanded="false">
+            <div class="svc-card__num">04</div>
+            <div class="svc-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="svc-card__title">Digital Marketing</h3>
+            <p class="svc-card__desc">Data-driven campaigns across social, email, and paid ads that expand your reach and boost conversions.</p>
+            <div class="svc-card__tags">
+              <span>Social</span><span>Email</span><span>PPC</span>
+            </div>
+            <div class="svc-card__toggle" aria-hidden="true">
+              <span class="svc-card__toggle-text">View Details</span>
+              <svg class="svc-card__chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+            <div class="svc-card__panel" aria-hidden="true">
+              <div class="svc-card__panel-inner">
+                <ul class="svc-card__features">
+                  <li>Channel strategy &amp; content calendar</li>
+                  <li>Social media management (up to 3 platforms)</li>
+                  <li>Email sequences &amp; automation</li>
+                  <li>Google / Meta paid ad campaigns</li>
+                  <li>Monthly analytics report with insights</li>
+                </ul>
+                <a href="#contact" class="btn btn--primary btn--sm svc-card__cta">Get a Quote →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="svc-card reveal" data-delay="80" tabindex="0" role="button" aria-expanded="false">
+            <div class="svc-card__num">05</div>
+            <div class="svc-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3 class="svc-card__title">Mobile Apps</h3>
+            <p class="svc-card__desc">Cross-platform iOS and Android applications with native-feel performance and beautiful user experiences.</p>
+            <div class="svc-card__tags">
+              <span>React Native</span><span>iOS</span><span>Android</span>
+            </div>
+            <div class="svc-card__toggle" aria-hidden="true">
+              <span class="svc-card__toggle-text">View Details</span>
+              <svg class="svc-card__chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+            <div class="svc-card__panel" aria-hidden="true">
+              <div class="svc-card__panel-inner">
+                <ul class="svc-card__features">
+                  <li>Single codebase for iOS &amp; Android</li>
+                  <li>Push notifications &amp; offline support</li>
+                  <li>App Store &amp; Google Play submission</li>
+                  <li>Backend API design &amp; integration</li>
+                  <li>3 months post-launch support &amp; updates</li>
+                </ul>
+                <a href="#contact" class="btn btn--primary btn--sm svc-card__cta">Get a Quote →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="svc-card reveal" data-delay="160" tabindex="0" role="button" aria-expanded="false">
+            <div class="svc-card__num">06</div>
+            <div class="svc-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 class="svc-card__title">SEO & Analytics</h3>
+            <p class="svc-card__desc">Technical SEO audits, keyword strategies, and analytics dashboards to maximize visibility and ROI.</p>
+            <div class="svc-card__tags">
+              <span>Technical SEO</span><span>Analytics</span><span>CRO</span>
+            </div>
+            <div class="svc-card__toggle" aria-hidden="true">
+              <span class="svc-card__toggle-text">View Details</span>
+              <svg class="svc-card__chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+            <div class="svc-card__panel" aria-hidden="true">
+              <div class="svc-card__panel-inner">
+                <ul class="svc-card__features">
+                  <li>Full technical SEO audit &amp; fix plan</li>
+                  <li>Keyword research &amp; content strategy</li>
+                  <li>On-page &amp; meta tag optimization</li>
+                  <li>Google Analytics 4 &amp; Search Console setup</li>
+                  <li>Monthly ranking report &amp; action items</li>
+                </ul>
+                <a href="#contact" class="btn btn--primary btn--sm svc-card__cta">Get a Quote →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         PROCESS
+    ════════════════════════════════════════════════════ -->
+    <section class="process section" id="process" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">How We Work</div>
+          <h2 class="section-title" id="process-heading">Our Proven <span class="text-gradient">4-Step Process</span></h2>
+          <p class="section-subtitle">A clear, collaborative workflow designed to deliver results without the guesswork.</p>
+        </div>
+
+        <div class="process__steps">
+
+          <div class="process__step reveal" data-delay="0" tabindex="0" role="button" aria-expanded="false">
+            <div class="process__num">01</div>
+            <div class="process__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 class="process__title">Discovery</h3>
+            <div class="process__toggle">
+              <span class="process__toggle-text">View Details</span>
+            </div>
+            <div class="process__panel" aria-hidden="true">
+              <div class="process__panel-inner">
+                <p class="process__desc">We immerse ourselves in your brand, audience, and goals — asking the right questions to build a strategy that actually works.</p>
+                <ul class="process__list">
+                  <li>Brand &amp; competitor audit</li>
+                  <li>Target audience research</li>
+                  <li>Business goals &amp; KPI definition</li>
+                  <li>Stakeholder interviews</li>
+                  <li>Market positioning analysis</li>
+                </ul>
+                <span class="process__duration">Duration: 1–2 weeks</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="process__connector reveal" data-delay="60" aria-hidden="true"></div>
+
+          <div class="process__step reveal" data-delay="120" tabindex="0" role="button" aria-expanded="false">
+            <div class="process__num">02</div>
+            <div class="process__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 class="process__title">Strategy</h3>
+            <div class="process__toggle">
+              <span class="process__toggle-text">View Details</span>
+            </div>
+            <div class="process__panel" aria-hidden="true">
+              <div class="process__panel-inner">
+                <p class="process__desc">A detailed roadmap: scope, timeline, tech stack, and KPIs — so every decision is intentional and measurable.</p>
+                <ul class="process__list">
+                  <li>Project scope &amp; deliverables</li>
+                  <li>Tech stack selection</li>
+                  <li>Timeline &amp; milestone planning</li>
+                  <li>Content &amp; SEO strategy</li>
+                  <li>Budget breakdown</li>
+                </ul>
+                <span class="process__duration">Duration: 1 week</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="process__connector reveal" data-delay="180" aria-hidden="true"></div>
+
+          <div class="process__step reveal" data-delay="240" tabindex="0" role="button" aria-expanded="false">
+            <div class="process__num">03</div>
+            <div class="process__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3 class="process__title">Design & Build</h3>
+            <div class="process__toggle">
+              <span class="process__toggle-text">View Details</span>
+            </div>
+            <div class="process__panel" aria-hidden="true">
+              <div class="process__panel-inner">
+                <p class="process__desc">Our designers and developers bring the vision to life in rapid sprints, with weekly demos and your feedback at every step.</p>
+                <ul class="process__list">
+                  <li>UI/UX wireframes &amp; prototypes</li>
+                  <li>Weekly sprint demos</li>
+                  <li>Responsive front-end development</li>
+                  <li>CMS &amp; back-end integration</li>
+                  <li>QA &amp; cross-browser testing</li>
+                </ul>
+                <span class="process__duration">Duration: 4–8 weeks</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="process__connector reveal" data-delay="300" aria-hidden="true"></div>
+
+          <div class="process__step reveal" data-delay="360" tabindex="0" role="button" aria-expanded="false">
+            <div class="process__num">04</div>
+            <div class="process__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="process__title">Launch & Grow</h3>
+            <div class="process__toggle">
+              <span class="process__toggle-text">View Details</span>
+            </div>
+            <div class="process__panel" aria-hidden="true">
+              <div class="process__panel-inner">
+                <p class="process__desc">We deploy, test thoroughly, and monitor performance — then stay by your side for ongoing support and continuous improvement.</p>
+                <ul class="process__list">
+                  <li>Production deployment &amp; DNS setup</li>
+                  <li>Performance &amp; security audit</li>
+                  <li>Analytics &amp; conversion tracking</li>
+                  <li>Team training &amp; handover docs</li>
+                  <li>Ongoing retainer &amp; support</li>
+                </ul>
+                <span class="process__duration">Duration: 1 week + ongoing</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         TESTIMONIALS
+    ════════════════════════════════════════════════════ -->
+    <section class="testimonials section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">Testimonials</div>
+          <h2 class="section-title" id="testimonials-heading">Clients Who <span class="text-gradient">Love Us</span></h2>
+          <p class="section-subtitle">Don't take our word for it — hear from the businesses we've helped grow.</p>
+        </div>
+
+        <div class="testimonials__grid">
+
+          <article class="tcard reveal" data-delay="0">
+            <div class="tcard__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="tcard__quote">
+              "Zain Agency completely transformed our online presence. The attention to detail was extraordinary and our conversion rates increased by 40% in the first month."
+            </blockquote>
+            <footer class="tcard__footer">
+              <div class="tcard__avatar" style="background:linear-gradient(135deg,#92400e,#d97706)">SC</div>
+              <div class="tcard__info">
+                <cite class="tcard__name">Sarah Chen</cite>
+                <span class="tcard__role">Marketing Director · TechFlow</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="tcard tcard--featured reveal" data-delay="100">
+            <div class="tcard__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="tcard__quote">
+              "Working with Zain Agency was a game-changer. They delivered our brand identity and website in record time, and the quality exceeded every expectation we had set."
+            </blockquote>
+            <footer class="tcard__footer">
+              <div class="tcard__avatar" style="background:linear-gradient(135deg,#d97706,#f97316)">MW</div>
+              <div class="tcard__info">
+                <cite class="tcard__name">Marcus Williams</cite>
+                <span class="tcard__role">Founder · BuildFast</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="tcard reveal" data-delay="200">
+            <div class="tcard__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="tcard__quote">
+              "They didn't just build us a website — they built us a growth engine. The team truly understands strategy and design. Highly recommend Zain Agency to any business!"
+            </blockquote>
+            <footer class="tcard__footer">
+              <div class="tcard__avatar" style="background:linear-gradient(135deg,#f97316,#fbbf24)">AH</div>
+              <div class="tcard__info">
+                <cite class="tcard__name">Amira Hassan</cite>
+                <span class="tcard__role">CEO · NovaSpark</span>
+              </div>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         ABOUT
+    ════════════════════════════════════════════════════ -->
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="container about__inner">
+
+        <div class="about__visual reveal">
+          <div class="about__card about__card--main">
+            <div class="about__card-emoji">🚀</div>
+            <p class="about__card-label">Launching Ideas</p>
+          </div>
+          <div class="about__card about__card--stat">
+            <span class="about__card-num" data-target="150" data-suffix="+">0+</span>
+            <p class="about__card-label">Projects Delivered</p>
+          </div>
+          <div class="about__card about__card--clients">
+            <div class="about__avatars">
+              <img class="about__av" src="https://randomuser.me/api/portraits/women/26.jpg" alt="Happy client" width="32" height="32" />
+              <img class="about__av" src="https://randomuser.me/api/portraits/men/54.jpg"   alt="Happy client" width="32" height="32" />
+              <img class="about__av" src="https://randomuser.me/api/portraits/women/71.jpg" alt="Happy client" width="32" height="32" />
+              <img class="about__av" src="https://randomuser.me/api/portraits/men/18.jpg"   alt="Happy client" width="32" height="32" />
+            </div>
+            <p class="about__card-label">50+ Happy Clients</p>
+          </div>
+          <div class="about__float-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Award-winning work
+          </div>
+          <div class="about__stats-row">
+            <div class="about__stat">
+              <span class="about__stat-num" data-target="98" data-suffix="%">0%</span>
+              <span class="about__stat-label">Satisfaction</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num" data-target="5" data-suffix="+">0+</span>
+              <span class="about__stat-label">Years</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num" data-target="24" data-suffix="/7">0/7</span>
+              <span class="about__stat-label">Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__content reveal" data-delay="120">
+          <div class="section-badge">About Zain Agency</div>
+          <h2 class="section-title" id="about-heading">
+            Crafting Digital<br /><span class="text-gradient">Excellence</span> Since 2019
+          </h2>
+          <p class="about__desc">
+            We're a passionate team of designers, developers, and digital strategists united by one mission:
+            helping businesses thrive in an increasingly digital world. Every project we take on is built
+            with the precision of engineering and the soul of great design.
+          </p>
+
+          <ul class="about__features">
+            <li class="about__feature">
+              <div class="about__feature-check" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Pixel-perfect design with obsessive attention to detail</span>
+            </li>
+            <li class="about__feature">
+              <div class="about__feature-check" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Agile sprints with transparent weekly progress updates</span>
+            </li>
+            <li class="about__feature">
+              <div class="about__feature-check" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Scalable, maintainable code that grows with your business</span>
+            </li>
+            <li class="about__feature">
+              <div class="about__feature-check" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Dedicated post-launch support and continuous optimization</span>
+            </li>
+          </ul>
+
+          <a href="#contact" class="btn btn--primary btn--lg">
+            Start a Project
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         CONTACT
+    ════════════════════════════════════════════════════ -->
+    <section class="contact section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">Get In Touch</div>
+          <h2 class="section-title" id="contact-heading">Let's Build Something <span class="text-gradient">Great Together</span></h2>
+          <p class="section-subtitle">Have a project in mind? We'd love to hear about it. Drop us a message and we'll get back to you within 24 hours.</p>
+        </div>
+
+        <div class="contact__inner">
+
+          <div class="contact__info reveal">
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <p class="contact__info-label">Email</p>
+                <a href="mailto:hello@zainagency.com" class="contact__info-value">hello@zainagency.com</a>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 13a19.79 19.79 0 01-3.07-8.67A2 2 0 013.06 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <p class="contact__info-label">Phone</p>
+                <a href="tel:+10000000000" class="contact__info-value">+1 (000) 000-0000</a>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <p class="contact__info-label">Location</p>
+                <a href="https://www.google.com/maps/search/remote+worldwide+agency" target="_blank" rel="noopener noreferrer" class="contact__info-value">Remote · Worldwide</a>
+              </div>
+            </div>
+
+            <div class="contact__socials">
+              <a href="#" class="contact__social" aria-label="Twitter / X">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+              </a>
+              <a href="#" class="contact__social" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="#" class="contact__social" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="contact__social" aria-label="Dribbble">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact__form reveal" id="contactForm" data-delay="120" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required autocomplete="name" />
+                <span class="form-error" id="nameError" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="john@company.com" required autocomplete="email" />
+                <span class="form-error" id="emailError" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="budget" class="form-label">Project Budget</label>
+                <div class="form-select-wrap">
+                  <select id="budget" name="budget" class="form-input form-select">
+                    <option value="" disabled selected>Select a budget range</option>
+                    <option value="<5k">Under $5,000</option>
+                    <option value="5k-15k">$5,000 – $15,000</option>
+                    <option value="15k-50k">$15,000 – $50,000</option>
+                    <option value="50k+">$50,000+</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="location" class="form-label">Your Location</label>
+                <input type="text" id="location" name="location" class="form-input" placeholder="City, Country" autocomplete="country-name" />
+                <span class="form-error" id="locationError" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Tell Us About Your Project</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Describe your project, goals, and timeline..." required rows="5"></textarea>
+              <span class="form-error" id="messageError" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg form-submit" id="submitBtn">
+              <span class="form-submit__text">Send Message</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="form-submit__icon" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div class="form-success" id="formSuccess" aria-live="polite" aria-atomic="true" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Message received! We'll get back to you within 24 hours.
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── Footer ────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#home" class="nav__logo footer__logo">Zain<span>Agency</span></a>
+        <p class="footer__tagline">Digital experiences that drive results. Built with passion, delivered with precision.</p>
+        <div class="footer__socials">
+          <a href="#" class="contact__social" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+          </a>
+          <a href="#" class="contact__social" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="contact__social" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <h3 class="footer__col-title">Navigation</h3>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer__col">
+        <h3 class="footer__col-title">Services</h3>
+        <span>Web Development</span>
+        <span>Brand Identity</span>
+        <span>UI/UX Design</span>
+        <span>Digital Marketing</span>
+        <span>Mobile Apps</span>
+        <span>SEO & Analytics</span>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__col-title">Contact</h3>
+        <a href="mailto:hello@zainagency.com">hello@zainagency.com</a>
+        <a href="tel:+10000000000">+1 (000) 000-0000</a>
+        <span>Remote · Worldwide</span>
+        <a href="#contact" class="btn btn--primary btn--sm footer__cta">Start a Project</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> Zain Agency. All rights reserved.</p>
+      <p class="footer__love">Made with <span aria-label="love">♥</span> by Zain Agency</p>
+    </div>
+  </footer>
+
+  <!-- ─── Back to top ───────────────────────────────────── -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
